@@ -1,7 +1,6 @@
-import elephant from "../images/elephant.jpeg";
+import elephant from '../images/elephant.jpeg'
 
-const imageData = ()=>{
-    let data = [
+    let Datacomponent = [
       {
         id:1,
         img:elephant
@@ -19,7 +18,5 @@ const imageData = ()=>{
         img:elephant
       }
     ]
-    return data;
-  }
-
-  export default imageData()
+    
+  export default Datacomponent;

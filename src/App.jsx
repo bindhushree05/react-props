@@ -1,15 +1,27 @@
 import './App.css';
-import imageData from './components/Datacomponents';
 
-function App() {
+function App(props) {
   // code here
+  const imgData = props.data;
 
-  const images=imageData.map((item)=>{
-    return <img  key={item.id} id={item.id} className="images" src={item.img}></img>
-  })
- return <>
-        <div className="h1Container"><h1>Kalvium gallary</h1></div>
-        <div className="imagesContainer">{images}</div>
-        </>
+  return (
+    <div>
+      <h1>Kalvium Gallary</h1>
+      <div className="row">
+
+      {
+        imgData.map((image) => {
+          return (
+            <div className="column"key={image.id}>
+        <img src={image.img} alt="" />
+      </div>
+
+          )
+        })
+      }  
+      
+    </div>
+    </div>
+  );
 }
 export default App;
