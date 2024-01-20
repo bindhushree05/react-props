@@ -1,0 +1,16 @@
+/* add your styles here */
+.imageContainer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 70px;
+}
+
+.h1Container{
+    text-align: center;
+    font-size: 20px;
+}
+
+.images{
+    height: 50%;
+    width: 50%;
+}
