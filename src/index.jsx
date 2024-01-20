@@ -8,6 +8,5 @@ import Data from './components/Datacomponents'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App data={Data}/>
-   {/* <AppClass data={Data}/> */}
   </React.StrictMode>,
 )
